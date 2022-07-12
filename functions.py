@@ -15,33 +15,51 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
+
 print("\n------------------- Challenge 1 -------------------\n")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
+def print_message():
+	print("any message you want")
+
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
-
-
+def print_five_messages():
+	print_message()
+	print_message()
+	print_message()
+	print_message()
+	print_message()
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
-
+def get_user_input():
+	num=int(input("do you want print the message one time or five times"))
+	if num==1:
+		print_message()
+	else:
+		print_five_messages()
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
-
+# def print_greeting():
+print("hi how are you")
+print_greeting
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
-
+def print_closing():
+	print("peace")
+	print_closing
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
-
+def run ():
+	get user input
 
 
 # -------------------------------------------- 
