@@ -30,10 +30,10 @@ import random
 	
 
   # --------------------------------------------
-Print(How a Magic 8 ball works:)
+print("How a Magic 8 ball works")
 
-print(The user asks a qouestion and vigoriously shakes the ball)
-print(Then the ball will respond with one of twenty responses, chosen at random)
+print("The user asks a qouestion and vigoriously shakes the ball")
+print("Then the ball will respond with one of twenty responses, chosen at random")
 
 
 
@@ -74,11 +74,11 @@ print(Then the ball will respond with one of twenty responses, chosen at random)
 	# Look up random.rand_int to see how you can use it to select a random number.
 
   # -------------------------------------------- 
-print(it is certain')
-print(it is decidedly so)
-print(without a doubt)
+print("it is certain")
+print("it is decidedly so")
+print("without a doubt")
 input("ask a qouestionj")
-num=random.rand_int(0,19 )
+num=random.randint(0,19 )
 if num ==0:
 	print("it is certain.")
 elif num==1:
@@ -114,11 +114,11 @@ elif num==15:
 elif num==16:
     print("My reply is no.")
 elif num==17:
-print("My sources say no.")
+	print("My sources say no.")
 elif num==18:
-print("Outlook not so good.")
-elif num==19
-print("Very doubtful.")
+	print("Outlook not so good.")
+elif num==19:
+	print("Very doubtful.")
 
 
 

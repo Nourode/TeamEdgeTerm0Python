@@ -122,9 +122,9 @@ def order():
 		user_dessert = "cake"
 		dessert_cost = 1
 
-order()	
-
-
+order ("Hi I would like a coke")	
+order ("I would also like a taco")
+order ("For dessert I would like a cake")
 # Write a function that will take the order:
 # - Prompt the user to enter a drink, dessert, and meal (Bonus: give them the option to not order an item)
 # - Return the cost 
@@ -132,7 +132,6 @@ order()
 # Remember! Functions are meant to be reusable, so write a function that will work when called repeatedly!
 
 # --------------------------------------------
-
 
 
 
@@ -177,7 +176,7 @@ order()
 # Write a function that will take the values of the order and total cost and print it out in an appealing way.
 
 # The receipt should include:
-# - Cost of each item
+# - Cost of each item  
 # - Tax for the order
 # - Tip for the order
 # - Total cost for the order
@@ -192,10 +191,11 @@ def receipt ():
 	global user_dessert
 	global dessert_cost 
 
-	total = drink_cost + meal_cost + dessert_cost 
-   
-    tip = input("would you like to leave a tip for the order")
-   
+	total = drink_cost + meal_cost + dessert_cost
+	
+	tip = input("would you like to leave a tip for the order")
+
+	
    
       
 

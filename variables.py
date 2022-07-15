@@ -90,17 +90,21 @@ print(product)
 # **** Challenge 2: Problem 4 ****
 # Store the power of the product squared in a variable.
 # Print the power.
-product = 
+num5=product**2
+print(num5)
 
 
 # **** Challenge 2: Problem 5 ****
 # Store the quotient of the power divided by 4 in a variable.
 # Print the quotient.
-
+quotient=num5//4
 
 # **** Challenge 2: Problem 6 ****
 # Store the remainder of the quotient divided by 2 in a variable.
 # Print the remainder.
+mod=num5%4
+print(mod)
+
 
 
 # **** Upchallenge! ****
