@@ -93,7 +93,7 @@ def order():
 	global user_meal 
 	global meal_cost
 	global user_dessert
-	global dessert_cost
+	global dessert_cost 
 
 
 	drink = input("what would you like to drink (enter 1 or 2): ")
