@@ -113,7 +113,7 @@ class CodeGuessingGame:
     def __init__(self):
         ## define the range
         self.LOWER = 1
-        self.HIGHER = 50
+        self.HIGHER = 5
 
     def get_random_number(self):
         return random.randint(self.LOWER, self.HIGHER)

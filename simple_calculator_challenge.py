@@ -32,7 +32,7 @@ print("My Simple Calculator")
 def add_numbers (num1, num2):
 	return num1 + num2
 	
-return(num1+num2)
+	return(num1+num2)
 
 
 
@@ -42,13 +42,13 @@ return(num1+num2)
 def sub_numbers (num1, num2):
 	return num1-num2
 
-return (num1+num2)
+	return (num1+num2)
 
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
- add_numbers:"(5, 15), 20)"
+add_numbers:(5 15), 20
 def check_answers(add_numbers(3, 18), 21)
 check_answers(add_numbers(12, 28), 40)
 
@@ -73,8 +73,8 @@ check_answers(sub_numbers(18, 21), -3)
 # Write a function called multiply_numbers that will take two numbers and return the product.
 
 def multiply_numbers (num1, num2):
-	return (num1 * num2)
-	print (return)
+		return (num1 * num2)
+print (return)
 
 
 

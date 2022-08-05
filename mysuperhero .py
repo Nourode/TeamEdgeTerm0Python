@@ -6,7 +6,7 @@ class Superhero:
         self.superpower= ""
         self.strength= ""
         self.physical_characteristic=""
-thor_nour = Superhero("fly","strong","short")
+thore = Superhero("fly","strong","short")
 
 
 def attack(self, enemy):
