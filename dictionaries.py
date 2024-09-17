@@ -16,6 +16,9 @@
  # 
  # #########################################################################/
 
+from ctypes.wintypes import HICON
+
+
 print("------------------- CHALLENGE 1 : DEFINE    -------------------")
 
 #Below is a simple example of a dictionary implementaion. 
@@ -39,7 +42,16 @@ print(dictionary)
 #-->TODO: Declare a new dictionary and set at least 4 properties to it including: string, boolean, number, list
 
 ##################################  MY dictionary ########################### #/
+langauge={ 
+"words": "Hi",
+"dilactes": "new york",
+"years": 2000,
+"know": True
 
+
+
+
+} 
 
 
 
@@ -52,13 +64,13 @@ print(dictionary)
 print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
-
+print (langauge)
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
-
+langauge ["country"] = "usa"
 
 #-->TODO: Print your dictionary again and observe changes
-
+print (langauge)
 
 print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 

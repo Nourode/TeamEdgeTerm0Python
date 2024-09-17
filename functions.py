@@ -15,34 +15,57 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
+
+from calendar import week
+
+
 print("\n------------------- Challenge 1 -------------------\n")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
+def print_message():
+	print("print_message")
+
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
-
-
+def print_five_messages():
+	print_message()
+	print_message()
+	print_message()
+	print_message()
+	print_message()
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
-
+def get_user_input():
+	num=int(input("do you want print the message one time or five times"))
+	if num==1:
+		print_message()
+	else:
+		print_five_messages()
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
-
+def print_greeting():
+	print("hi how are you")
+print_greeting()
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
-
+def print_closing():
+	print("peace")
+print_closing()
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
-
-
+def run ():
+	print("hello")
+	get_user = input ("what is your name?")
+	print("hello " + get_user)
+run()
 
 # -------------------------------------------- 
 
@@ -65,8 +88,21 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
+def sum_double(a,b):
+	if a == b:
+		c=(a+b)*2
+		print (c)
+		return c
+	else:
+		c=	a+b
+		print (c)
+		return c
+sum_double(2,2)
 
 
+	#return	a+b
+#if a==b:
+	#return(a+b)
 
 
 
@@ -85,7 +121,15 @@ print("\n------------------- Challenge 2 -------------------\n")
 		# makes_10(1, 9) → True
 
 # -------------------------------------------- 
-
+def makes_10 (a,b): 
+	if a ==10 or b ==10:
+		return True 
+	elif a+b == 10:
+		return True
+	else:
+		return False 
+	
+ 
 
 
 
@@ -95,6 +139,11 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
+def makes_10(a,b):
+	if a==10 or b==10:
+		return True
+	elif a+b == 10:
+		return True
 # **** Challenge 2: Problem 3 ****
 
 # Write a function that will return the time our alarm is set to go off.
@@ -110,6 +159,17 @@ print("\n------------------- Challenge 2 -------------------\n")
 		# alarm_clock(0, False) → "10:00"
 
 # -------------------------------------------- 
+def alarm_clock(a ,b):
+	if a == 1 or a == 2 or a ==3 or a ==4  or a == 5:
+		print ("7:00")
+	elif a == 7  or a == 0: 
+		print ("10:00")  
+	if b == True: 
+		print ("off") 
+	elif b == False:
+		print ("10:00")
+
+		
 
 
 
@@ -135,6 +195,20 @@ print("\n------------------- Challenge 2 -------------------\n")
 # If speed is 81 or more, the result is 2.
 
 # -------------------------------------------- 
+
+def speeding_ticket(speed):
+	if speed <= 60:
+		print ("no ticket")
+	elif speed >= 61 and speed <= 80:
+		print("small ticket")
+	else:
+	  	print("big ticket")
+	
+speeding_ticket(62)
+
+
+
+
 
 
 

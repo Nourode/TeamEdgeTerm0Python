@@ -2,6 +2,7 @@
 # -------------------------------------------- 
 # Day 2 Challenges
 # -------------------------------------------- 
+import random
 
 message = "\nWelcome to Day 2.\nToday we are learning about conditionals.\nLet's practice writing some conditionals of our own!"
 print(message)
@@ -11,14 +12,22 @@ print("\n------------------- Challenge 1 -------------------\n")
 # Can you drive?
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether the user is legally allowed to drive in your city. 
+age = int(input("Enter your age:"))
+
+print(age) 
+
+
+if age>=18 and age <=80:  
+    print ("You can drive! ")
+else:
+   print ("sorry! You can't drive today.") 
 
 
 
-
-
-
-
-
+if age>= 21:
+    print ("You can drink!")
+else:
+   print("sorry! You can't drink today.")
 
 
 
@@ -32,7 +41,23 @@ print("\n------------------- Challenge 2 -------------------\n")
    # Create three variables and assign them random scores. 
    # Write conditional statements that check which is the highest score and prints it.
 
+a = random.randrange(1, 101)
+print(a)
+#get a random number between 0 and 50
+b = random.randrange(0, 50)
+print(b)
+#get a random number between 5 and 500
+c = random.randrange(5,500)
+print(c) 
+#Print out the highest number
+# f"{c} is the highest number"
+if a>b and a>c:
+    print ("a is the higest number")
 
+elif b>a and b>c:
+    print ("b is the higest number")
+elif c>b and c>a:
+    print ("c is the higest number") 
 
 
 
@@ -58,7 +83,20 @@ print("\n------------------- Challenge 3 -------------------\n")
 # Snowing: Wear gloves and a scarf 
 
 # Here's a variable to get you started:
-weather = "rainy"
+weather = "rain"
+if weather == "rain":
+   print("Bring an umbrella!")
+else:
+    print("No raincoat is needed")
+
+weather="sunny"
+if weather == "sunny":
+    print("wear a hat and sunglasses")
+
+
+weather="snowing"
+if weather == "snowing":
+    print("Wear gloves and a scarf")
 
 
 
@@ -84,6 +122,19 @@ weather = "rainy"
    # Add to your conditional statements above and modify your weather reports to also take into account the temperature. 
    # Make sure to account for at least three different temperatures!
    # Hint: You will need another variable to keep track of the temperature.
+temperature = 70
+
+if temperature > 85:
+    print('it is hot wear sunscreen')
+else:
+    print('it is not hot')
+
+temperature=20
+if temperature<30:
+    print('it is freezing, wear a jacket')
+else: 
+    print ("it is not freezing, wear a coat")
+      
 
 
 
@@ -105,7 +156,24 @@ print("\n------------------- Challenge 4 -------------------\n")
 # and print out the corresponding day of the week. 
 # Make sure to add a statement that accounts for any numbers out of range! 
 
+day= int(input("Enter a number 1-7 : "))
 
+if (day==1):
+    print(day," is Sunday")
+elif (day==2):
+    print(day," is Monday")
+elif (day==3):
+    print(day," is Tuesday")
+elif (day==4):
+    print(day," is Wednesday")
+elif (day==5):
+    print(day," is Thursday")
+elif (day==6):
+    print(day," is Friday")
+elif (day==7):
+    print(day," is Saturday")
+else:
+    print("Wrong Input!!!!!")
 
 
 
@@ -133,7 +201,22 @@ print("\n------------------- Challenge 5 -------------------\n")
 # year stored in a variable is/was a leap year.
 
 
+year = 2000
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("True")
+        else:
+            print("False")
+    else:
+        print("True")
+else:
+    print("False")
 
 
 
-
+year = 2016
+if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)):
+  print("True")
+else:
+  print("False")

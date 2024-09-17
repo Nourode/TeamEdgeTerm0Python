@@ -1,6 +1,6 @@
 # -------------------------------------------- 
 
-	# You've just learned about variables, conditionals, functions, and user input. 
+	# Yeou've just learned about variablconditionals, functions, and user input. 
 	# You've also created a basic calculator in a previous project.
 	
 	# Now imagine you are going out to eat.
@@ -42,8 +42,32 @@
 
 # --------------------------------------------
 
+from functools import total_ordering
 
 
+print("MENU")
+print("------")
+print("Drinks")
+print("1.coke		1.00$")
+print("2.apple juice	1.00$")
+
+print("Meals")
+print("3.pizza	5.00$")
+print("4.Taco	3.00$")
+print("5.Rice		2.00$")
+
+print("Desserts")
+print("6. cupcakes 3.00$")
+print("7. cake		1.00$")
+
+print("Hi ! welcome to Restraunt")
+
+user_drink = ""
+drink_cost = 0
+user_meal = ""
+meal_cost = 0
+user_dessert = ""
+dessert_cost = 0
 # -------------------------------------------- 
 
 # Part 2:
@@ -63,7 +87,44 @@
 
 # Part 3:
 # Let's take the order. What did the user order? What does it cost?
+def order():
+	global user_drink
+	global drink_cost
+	global user_meal 
+	global meal_cost
+	global user_dessert
+	global dessert_cost 
 
+
+	drink = input("what would you like to drink (enter 1 or 2): ")
+	if drink == "1": 
+		user_drink = "coke" 
+		drink_cost = 1
+	else:
+		user_drink = "apple juice"
+		drink_cost = 1
+	meal = input("what would you like to eat")
+	if meal == "3":
+		user_meal = "pizza"
+		meal_cost = 5
+	elif meal == "4" :
+		user_meal = "taco"
+		meal_cost = 3
+	elif meal == "5":
+		user_meal = "rice"
+		meal_cost = 3
+    
+	dessert = input ("what would you like for dessert" )
+	if dessert == "6":
+		user_dessert = "cupcakes"
+		dessert_cost = 3
+	else:
+		user_dessert = "cake"
+		dessert_cost = 1
+
+order ("Hi I would like a coke")	
+order ("I would also like a taco")
+order ("For dessert I would like a cake")
 # Write a function that will take the order:
 # - Prompt the user to enter a drink, dessert, and meal (Bonus: give them the option to not order an item)
 # - Return the cost 
@@ -71,7 +132,6 @@
 # Remember! Functions are meant to be reusable, so write a function that will work when called repeatedly!
 
 # --------------------------------------------
-
 
 
 
@@ -116,13 +176,31 @@
 # Write a function that will take the values of the order and total cost and print it out in an appealing way.
 
 # The receipt should include:
-# - Cost of each item
+# - Cost of each item  
 # - Tax for the order
 # - Tip for the order
 # - Total cost for the order
 
 
 # -------------------------------------------- 
+def receipt ():
+	global user_drink
+	global drink_cost
+	global user_meal
+	global meal_cost
+	global user_dessert
+	global dessert_cost 
+
+	total = drink_cost + meal_cost + dessert_cost
+	
+	tip = input("would you like to leave a tip for the order")
+
+	
+   
+      
+
+
+   
 
 
 

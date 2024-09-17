@@ -30,11 +30,10 @@ import random
 	
 
   # --------------------------------------------
+print("How a Magic 8 ball works")
 
-
-
-
-
+print("The user asks a qouestion and vigoriously shakes the ball")
+print("Then the ball will respond with one of twenty responses, chosen at random")
 
 
 
@@ -75,8 +74,51 @@ import random
 	# Look up random.rand_int to see how you can use it to select a random number.
 
   # -------------------------------------------- 
-
-
+print("it is certain")
+print("it is decidedly so")
+print("without a doubt")
+input("ask a qouestionj")
+num=random.randint(0,19 )
+if num ==0:
+	print("it is certain.")
+elif num==1:
+	print ("It is decidedly so.")
+elif num==2:
+  print("Without a doubt")
+elif num==3:
+  print("yes - definitely.")
+elif num==4:
+  print("You may rely on it.")
+elif num==5:
+  print("As I see it, yes.")
+elif num==6:
+  print("Most likely.")
+elif num==7:
+  print("Outlook good.")
+elif num==8:
+	print("Yes.")
+elif num==9:
+    print("Signs point to yes.")
+elif num==10:
+    print("Reply hazy, try again.")
+elif num==11:
+    print("Ask again later.")
+elif num==12:
+    print("Better not tell you now.")
+elif num==13:
+    print("Cannot predict now.")
+elif num==14:
+    print("Concentrate and ask again..")
+elif num==15:
+    print("Don't count on it.")
+elif num==16:
+    print("My reply is no.")
+elif num==17:
+	print("My sources say no.")
+elif num==18:
+	print("Outlook not so good.")
+elif num==19:
+	print("Very doubtful.")
 
 
 
